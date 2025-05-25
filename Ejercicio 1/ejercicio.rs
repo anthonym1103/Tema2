@@ -41,6 +41,6 @@ fn main() {
     let lista = generar_lista(3, 4);
     for nodo in lista {
         println!("Partida: {}...\nCuerpo: {:?}\nFirma: {}...\n", 
-            &nodo.partida[0..10], nodo.cuerpo, &nodo.firma[0..10]);
+            &nodo.partida[0..64], nodo.cuerpo, &nodo.firma[0..64]);
     }
 }

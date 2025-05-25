@@ -47,11 +47,11 @@ int main()
     auto lista = generar_lista(3, 4);
     for (auto &nodo : lista)
     {
-        std::cout << "Partida: " << nodo.partida.substr(0, 10) << "...\n";
+        std::cout << "Partida: " << nodo.partida.substr(0, 64) << "...\n";
         std::cout << "Cuerpo: ";
         for (int num : nodo.cuerpo)
             std::cout << num << " ";
-        std::cout << "\nFirma: " << nodo.firma.substr(0, 10) << "...\n\n";
+        std::cout << "\nFirma: " << nodo.firma.substr(0, 64) << "...\n\n";
     }
     return 0;
 }
